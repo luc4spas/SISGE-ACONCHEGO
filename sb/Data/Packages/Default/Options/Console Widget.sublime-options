@@ -1,0 +1,4 @@
+scrollPastEnd false
+contextMenu Packages/Default/Console Context.sublime-menu
+wordWrap true
+isConsole true

@@ -1,0 +1,7 @@
+<menu>
+	<item caption="Close" command="hidePanel"/>
+	<separator/>
+	<item caption="Copy" command="copy"/>
+	<separator/>
+	<item caption="Word wrap" command="toggle wordWrap"/>
+</menu>

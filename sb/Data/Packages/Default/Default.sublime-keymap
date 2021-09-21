@@ -1,0 +1,402 @@
+<!--
+Bindable keys are:
+(a-z, 0-9, f1-f15)
+backquote, backslash, backspace, browser_back, browser_favorites,
+browser_forward, browser_home, browser_refresh, browser_search, browser_stop,
+capslock, clear, comma, contextmenu, delete, down, end, enter, equals, escape,
+home, insert, left, leftalt, leftbracket, leftcontrol, leftmeta, leftshift,
+leftsuper, minus, numlock, pagedown, pageup, pause, period, printscreen, quote,
+right, rightalt, rightbracket, rightsuper, scrolllock, semicolon, slash, space,
+tab, up
+
+Available modifiers are ctrl, alt, shift.
+
+Sequence key bindings, of the form key1,key2 will trigger when key1 is pressed,
+then key2 is pressed.
+
+For example:
+<binding key="ctrl+x,ctrl+s" command="save"/>
+
+New key bindings take effect as soon as you save this file, there's no need to
+restart Sublime Text.
+
+Also note that if the same key is bound twice, the last binding takes precedence.
+
+Note that changes to this file will often be overwritten when installing a new
+version of Sublime Text: it's safer to add your key bindings to
+User/Default.sublime-keymap
+-->
+<bindings>
+	<binding key="ctrl+o" command="open"/>
+	<binding key="ctrl+alt+o" command="openInCurrentTab"/>
+	<binding key="ctrl+shift+o" command="promptSelectFile"/>
+	<binding key="ctrl+alt+shift+o" command="promptOpenFileInCurrentDirectory"/>
+	<binding key="ctrl+n" command="new"/>
+	<binding key="ctrl+s" command="save"/>
+	<binding key="ctrl+shift+s" command="saveAs"/>
+	<binding key="ctrl+f4" command="close"/>
+	<binding key="ctrl+w" command="close"/>
+	<binding key="ctrl+p" command="openFileInProject"/>
+
+	<binding key="delete" command="rightDeleteCharacters"/>
+	<binding key="backspace" command="leftDeleteCharacters"/>
+	<binding key="shift+backspace" command="leftDeleteCharacters"/>
+	<binding key="ctrl+shift+backspace" command="leftDeleteCharacters"/>
+	<binding key="enter" command="insertAndDecodeCharacters \n"/>
+	<binding key="shift+enter" command="insertAndDecodeCharacters \n"/>
+
+	<binding key="insert" command="toggleOverwrite"/>
+
+	<binding key="ctrl+insert" command="copy"/>
+	<binding key="shift+insert" command="paste"/>
+	<binding key="shift+delete" command="cut"/>
+	<binding key="ctrl+c" command="copy"/>
+	<binding key="ctrl+x" command="cut"/>
+	<binding key="ctrl+v" command="paste"/>
+	<binding key="ctrl+shift+v" command="pasteAndIndent"/>
+
+	<binding key="ctrl+j" command="join"/>
+	<binding key="alt+q" command="wrapLines"/>
+
+	<binding key="ctrl+z" command="undo"/>
+	<binding key="ctrl+y" command="redoOrRepeat"/>
+	<binding key="ctrl+shift+z" command="redo"/>
+	<binding key="ctrl+u" command="softUndo"/>
+	<binding key="ctrl+shift+u" command="softRedo"/>
+
+	<binding key="escape" command="singleSelection"/>
+	<binding key="escape" command="clearFields">
+		<context name="hasPrevField" value="true"/>
+	</binding>
+	<binding key="escape" command="clearFields">
+		<context name="hasNextField" value="true"/>
+	</binding>
+	<binding key="escape" command="hidePanel">
+		<context name="isPanelVisible" value="true"/>
+	</binding>
+	<binding key="escape" command="hideOverlay">
+		<context name="isOverlayVisible" value="true"/>
+	</binding>
+
+	<binding key="alt+m" command="toggleApp showMinimap"/>
+	<binding key="alt+m" command="toggleApp showMinimapFullscreen">
+		<context name="isFullScreen" value="true"/>
+	</binding>
+
+	<binding key="ctrl+f" command="showPanel find"/>
+	<binding key="f3" command="findNext"/>
+	<binding key="shift+f3" command="findPrev"/>
+	<binding key="ctrl+f3" command="findUnder"/>
+	<binding key="ctrl+shift+f3" command="findUnderPrev"/>
+	<binding key="ctrl+shift+f" command="showPanel findInFiles"/>
+	<binding key="alt+f3" command="findAllUnder"/>
+	<binding key="ctrl+e" command="slurpFindString"/>
+	<binding key="ctrl+shift+e" command="slurpReplaceString"/>
+	<binding key="ctrl+shift+p" command="findInProject"/>
+
+	<binding key="ctrl+i" command="incrementalFind"/>
+	<binding key="ctrl+shift+i" command="reverseIncrementalFind"/>
+
+	<binding key="ctrl+h" command="showPanel replace"/>
+
+	<binding key="ctrl+g" command="showPanel goto"/>
+	<binding key="ctrl+r" command="gotoSymbol"/>
+
+	<binding key="ctrl+shift+a" command="invertSelection"/>
+	<binding key="ctrl+l" command="expandSelectionTo line"/>
+	<binding key="ctrl+shift+l" command="splitSelectionIntoLines"/>
+	<binding key="ctrl+a" command="selectAll"/>
+	<binding key="ctrl+k" command="singleSelection"/>
+	<binding key="ctrl+shift+k" command="splitSelection"/>
+	<binding key="ctrl+d" command="expandSelectionTo word"/>
+	<binding key="ctrl+d" command="findUnderExpand">
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+	<binding key="ctrl+shift+space" command="expandSelectionTo scope"/>
+	<binding key="ctrl+shift+m" command="expandSelectionTo brackets"/>
+
+	<binding key="ctrl+shift+w" command="toggle wordWrap"/>
+
+	<binding key="ctrl+tab" command="nextViewInStack"/>
+	<binding key="ctrl+shift+tab" command="prevViewInStack"/>
+	<binding key="ctrl+pagedown" command="nextView"/>
+	<binding key="ctrl+pageup" command="prevView"/>
+
+	<binding key="f6" command="toggle spellCheck"/>
+	<binding key="ctrl+f6" command="nextMisspelledWord"/>
+	<binding key="ctrl+shift+f6" command="prevMisspelledWord"/>
+
+	<binding key="f2" command="nextBookmark"/>
+	<binding key="shift+f2" command="prevBookmark"/>
+	<binding key="ctrl+f2" command="toggleBookmark"/>
+	<binding key="ctrl+shift+f2" command="clearBookmarks"/>
+	<binding key="alt+f2" command="allBookmarks"/>
+
+	<binding key="f11" command="toggleFullScreen"/>
+	<binding key="shift+f11" command="distractionFree"/>
+
+	<binding key="left" command="move characters -1"/>
+	<binding key="right" command="move characters 1"/>
+	<binding key="ctrl+left" command="move words -1"/>
+	<binding key="ctrl+right" command="move words 1"/>
+	<binding key="ctrl+alt+left" command="move wordends -1"/>
+	<binding key="ctrl+alt+right" command="move wordends 1"/>
+	<binding key="up" command="move lines -1"/>
+	<binding key="down" command="move lines 1"/>
+	<binding key="pageup" command="move pages -1"/>
+	<binding key="pagedown" command="move pages 1"/>
+	<binding key="shift+pageup" command="move pages -1 extend"/>
+	<binding key="shift+pagedown" command="move pages 1 extend"/>
+
+	<binding key="ctrl+alt+up" command="selectLines -1"/>
+	<binding key="ctrl+alt+down" command="selectLines 1"/>
+
+	<binding key="shift+left" command="move characters -1 extend"/>
+	<binding key="shift+right" command="move characters 1 extend"/>
+	<binding key="shift+ctrl+left" command="move words -1 extend"/>
+	<!--
+	While this isn't exactly consistent (wrt wordends rather than words) with
+	the ctrl+right behavior, it is generally what you want
+	-->
+	<binding key="shift+ctrl+right" command="move wordends 1 extend"/>
+	<binding key="shift+ctrl+alt+left" command="move wordends -1 extend"/>
+	<binding key="shift+ctrl+alt+right" command="move wordends 1 extend"/>
+ 	<binding key="shift+up" command="move lines -1 extend"/>
+	<binding key="shift+down" command="move lines 1 extend"/>
+
+	<binding key="home" command="moveTo bol"/>
+	<binding key="shift+home" command="moveTo bol extend"/>
+	<binding key="ctrl+home" command="moveTo bof"/>
+	<binding key="shift+ctrl+home" command="moveTo bof extend"/>
+	<binding key="end" command="moveTo eol"/>
+	<binding key="shift+end" command="moveTo eol extend"/>
+	<binding key="ctrl+end" command="moveTo eof"/>
+	<binding key="shift+ctrl+end" command="moveTo eof extend"/>
+	<binding key="ctrl+m" command="moveTo brackets"/>
+
+	<binding key="ctrl+up" command="scroll 1"/>
+	<binding key="ctrl+down" command="scroll -1"/>
+
+	<binding key="ctrl+shift+up" command="swapLine up"/>
+	<binding key="ctrl+shift+down" command="swapLine down"/>
+
+	<binding key="alt+o" command="switchFile cpp hpp h c cxx hxx cc inl"/>
+
+	<binding key="ctrl+1" command="focusGroup 0"/>
+	<binding key="ctrl+2" command="focusGroup 1"/>
+	<binding key="ctrl+3" command="focusGroup 2"/>
+	<binding key="ctrl+4" command="focusGroup 3"/>
+
+	<binding key="ctrl+shift+1" command="moveToGroup 0"/>
+	<binding key="ctrl+shift+2" command="moveToGroup 1"/>
+	<binding key="ctrl+shift+3" command="moveToGroup 2"/>
+	<binding key="ctrl+shift+4" command="moveToGroup 3"/>
+
+	<binding key="alt+1" command="layoutSingle"/>
+	<binding key="alt+2" command="layoutDoubleVert"/>
+	<binding key="alt+shift+2" command="layoutDoubleHoriz"/>
+	<binding key="alt+3" command="layoutTripleVert"/>
+	<binding key="alt+shift+3" command="layoutTriple"/>
+	<binding key="alt+4" command="layoutQuadVert"/>
+	<binding key="alt+shift+4" command="layoutQuad"/>
+
+	<binding key="ctrl+q" command="toggleRecord"/>
+	<binding key="ctrl+shift+q" command="runMacro"/>
+
+	<binding key="ctrl+space" command="autoComplete"/>
+	<binding key="ctrl+backquote" command="showPanel console"/>
+
+	<binding key="f9" command="showPanel sort nofocus"/>
+
+	<binding key="f7" command="build"/>
+	<binding key="ctrl+f7" command="exec '' '$File'"/>
+
+	<binding key="tab" command="insertAndDecodeCharacters \t"/>
+	<binding key="tab" command="reindent">
+		<context name="option" value="autoIndent"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allPrecedingText" value="^$"/>
+		<context name="allFollowingText" value="^$"/>
+	</binding>
+	<binding key="tab" command="indent">
+		<context name="newlineInSelection" value="true"/>
+	</binding>
+	<binding key="tab" command="nextField">
+		<context name="hasNextField" value="true"/>
+	</binding>
+
+	<binding key="shift+tab" command="noop"/>
+	<binding key="shift+tab" command="unindent">
+		<context name="newlineInSelection" value="true"/>
+	</binding>
+	<binding key="shift+tab" command="prevField">
+		<context name="hasPrevField" value="true"/>
+	</binding>
+
+	<binding key="ctrl+enter" command="runMacroFileSilently 'Packages/Default/Add Line.sublime-macro'"/>
+	<binding key="ctrl+shift+enter" command="runMacroFileSilently 'Packages/Default/Add Line Before.sublime-macro'"/>
+	<binding key="ctrl+backspace" command="deleteWord left"/>
+	<binding key="ctrl+delete" command="deleteWord right"/>
+
+	<binding key="ctrl+slash" command="toggleComment"/>
+	<binding key="ctrl+shift+slash" command="toggleComment block"/>
+
+	<!-- Auto insert paired quotes -->
+	<binding key="&quot;" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="&quot;"/>
+	</binding>
+	<binding key="&quot;" command="insertSnippet 'Packages/Default/Quote.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(?:\t| |\)|]|$)"/>
+		<context name="noPrecedingText" value="[&quot;a-zA-Z0-9_]$"/>
+	</binding>
+	<binding key="&quot;" command="insertSnippet 'Packages/Default/Quote.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+
+	<!-- Auto insert paired single quotes -->
+	<binding key="'" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="'"/>
+	</binding>
+	<binding key="'" command="insertSnippet 'Packages/Default/Single Quote.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(?:\t| |\)|]|$)"/>
+		<context name="noPrecedingText" value="['a-zA-Z0-9_]$"/>
+	</binding>
+	<binding key="'" command="insertSnippet 'Packages/Default/Single Quote.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+
+	<!-- Auto insert paired brackets -->
+	<binding key=")" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value=")"/>
+	</binding>
+	<binding key="(" command="insertSnippet 'Packages/Default/Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(?:\t| |\)|$)"/>
+	</binding>
+	<binding key="(" command="insertSnippet 'Packages/Default/Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+
+	<!-- Auto insert paired square brackets -->
+	<binding key="]" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="]"/>
+	</binding>
+	<binding key="[" command="insertSnippet 'Packages/Default/Square Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(?:\t| |]|\)|$)"/>
+	</binding>
+	<binding key="[" command="insertSnippet 'Packages/Default/Square Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+
+	<!-- Auto insert paired curly brackets -->
+	<binding key="}" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="}"/>
+	</binding>
+	<binding key="{" command="insertSnippet 'Packages/Default/Curly Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(?:\t| |\}|$)"/>
+	</binding>
+	<binding key="{" command="insertSnippet 'Packages/Default/Curly Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+	</binding>
+	<!-- Handy for C++, but doesn't work as expected for inline ctors and overloaded operators, so disabled by default -->
+	<!--
+	<binding key="{" command="insertInlineSnippet {$0};">
+		<context name="selector" value="source.c++ meta.class-struct-block - meta.function"/>
+		<context name="allPrecedingText" value="^\s*$|\bclass\b|\bstruct\b"/>
+		<context name="noFollowingText" value=";"/>
+	</binding>
+	-->
+	<binding key="enter" command="insertInlineSnippet '\n\t$0\n'">
+		<context name="option" value="autoIndent"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allPrecedingCharacter" value="{"/>
+		<context name="allFollowingCharacter" value="}"/>
+	</binding>
+	<binding key="shift+enter" command="insertInlineSnippet '\n\t$0\n'">
+		<context name="option" value="autoIndent"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allPrecedingCharacter" value="{"/>
+		<context name="allFollowingCharacter" value="}"/>
+	</binding>
+
+
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="}"/>
+		<context name="allPrecedingCharacter" value="{"/>
+	</binding>
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="]"/>
+		<context name="allPrecedingCharacter" value="["/>
+	</binding>
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value=")"/>
+		<context name="allPrecedingCharacter" value="("/>
+	</binding>
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="'"/>
+		<context name="allPrecedingCharacter" value="'"/>
+	</binding>
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="&quot;"/>
+		<context name="allPrecedingCharacter" value="&quot;"/>
+	</binding>
+	<binding key="backspace" command="sequence leftDeleteCharacters rightDeleteCharacters">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="&gt;"/>
+		<context name="allPrecedingCharacter" value="&lt;"/>
+	</binding>
+
+
+	<binding key="ctrl+alt+p" command="displayName"/>
+
+	<binding key="f4" command="nextResult"/>
+	<binding key="shift+f4" command="prevResult"/>
+
+	<binding key="alt+r" command="toggleApp find.regex">
+		<context name="option" value="isFindWidget"/>
+	</binding>
+	<binding key="alt+c" command="toggleApp find.caseSensitive">
+		<context name="option" value="isFindWidget"/>
+	</binding>
+	<binding key="alt+w" command="toggleApp find.wholeWord">
+		<context name="option" value="isFindWidget"/>
+	</binding>
+	<binding key="alt+p" command="toggleApp find.preserveCase">
+		<context name="option" value="isFindWidget"/>
+	</binding>
+</bindings>

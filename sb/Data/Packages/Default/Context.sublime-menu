@@ -1,0 +1,26 @@
+<menu>
+	<item caption="%s" command="spellingSuggestion %i" repeat="16"/>
+	<separator/>
+	<item caption="Ignore %s" command="ignoreWord"/>
+	<item caption="Add %s to Dictionary" command="addWord"/>
+	<separator/>
+	<item caption="Open %s" command="dispatch 'open %s' 128 '\&quot;([a-zA-Z0-9_\\- /\\\\:]+\\.[a-zA-Z0-9_]+)\\&quot;|include &lt;([a-zA-Z0-9_\\.\\- /\\\\:]+)&gt;' 1"/>
+	<item caption="Open %s" command="dispatch 'open %s' 128 '\&quot;([a-zA-Z0-9_\\- /\\\\:]+\\.[a-zA-Z0-9_]+)\\&quot;|include &lt;([a-zA-Z0-9_\\.\\- /\\\\:]+)&gt;' 2"/>
+	<item caption="Open %s" command="dispatch 'browseUrl %s' 128 '(ftp|http|https)\\://[a-zA-Z0-9/_\\?\\&amp;\\=\\+\\-\\.]+'"/>
+	<item caption="Email %s" command="dispatch 'sendEmail %s' 128 '[a-zA-Z0-9\\-_\\.]+\\@[a-zA-Z0-9\\-_\\.]+'"/>
+	<separator/>
+	<item caption="Undo" command="undo"/>
+	<item caption="Redo" command="redo"/>
+	<separator/>
+	<item caption="Cut" command="cut"/>
+	<item caption="Copy" command="copy"/>
+	<item caption="Paste" command="paste"/>
+	<separator/>
+	<item caption="Open containing folder" command="openFolder"/>
+	<item caption="Open in browser" command="openInBrowser"/>
+	<item caption="Copy file path" command="copyPath"/>
+	<separator/>
+	<item caption="Word wrap" command="toggle wordWrap"/>
+	<separator/>
+	<item caption="Find all occurrences" command="findAllUnder"/>
+</menu>

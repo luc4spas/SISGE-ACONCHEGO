@@ -1,0 +1,6 @@
+<project>
+	<mount name="General" dir="Packages/Default/Options" include="Application.sublime-options" stripExtensions="true" expand="true"/>
+	<mount name="File Type Defaults" dir="Packages/Default/Options" include="Default File Type.sublime-options,User File Type.sublime-options" stripExtensions="true" flat="true"/>
+	<mount name="File Types" dir="Packages/" include="*.sublime-options" direxclude="Options" stripExtensions="true" flat="true"/>
+	<mount name="Key Bindings" dir="Packages/" include="*.sublime-keymap" stripExtensions="true"/>
+</project>

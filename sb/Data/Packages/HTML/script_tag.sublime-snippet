@@ -1,0 +1,6 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+	<content><![CDATA[<script type="${1:text/javascript}">$2</script>]]></content>
+	<tabTrigger>script</tabTrigger>
+	<scope>text.html - source, meta.scope.between-tag-pair.html</scope>
+</snippet>

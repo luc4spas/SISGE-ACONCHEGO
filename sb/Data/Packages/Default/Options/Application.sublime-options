@@ -1,0 +1,65 @@
+# Words added to the dictionary
+addedWords 
+# Words ignored by the spell checker
+ignoredWords 
+
+keymap Default
+openPreviousFiles true
+showMinimap true
+showStatusbar true
+showTabs true
+showMinimapFullscreen false
+showStatusbarFullscreen false
+showTabsFullscreen false
+showMenuFullscreen true
+
+# Set to true to show a close button on the right hand side of the tabs
+showCloseButton false
+# Set to true to show a close button next to each file
+showTabCloseButtons true
+# Set to true for new tabs to be created to the right of all existing tabs,
+# rather than to the right of the current tab
+createTabsAtEnd false
+
+# Maximum width the minimap will grow to
+minimapMaxWidth 175.000000
+# Set to false to draw the minimap on the right hand side
+minimapOnLeft true
+
+theme Packages/Theme - Default/Default.sublime-theme
+
+autoSaveEnabled true
+# Auto save every 30 seconds
+autoSaveInterval 30000
+# Don't auto save changes to files larger than this
+autoSaveMaxFileSize 262144
+
+build Packages/C++/Make.sublime-build
+buildOnSave false
+saveOnBuild false
+
+# Check for updates on startup
+checkForUpdates true
+
+# Find / replace settings
+find.regex true
+find.caseSensitive false
+find.wholeWord false
+find.reverse false
+find.wrap true
+find.inSelection false
+find.highlight true
+find.preserveCase false
+# Set to false to not have ctrl+f copy the selected text into the find buffer
+find.useSelectedText true
+
+# Default settings for new projects
+project.direxclude .svn,.git,.hg,CVS,bin
+project.exclude *.png,*.jpg,*.exe,*.dll,*.obj,*.pyc
+project.buildFile Packages/C++/Make.sublime-build
+
+# Set to true to log each command run to the console
+debugCommands false
+showToolbar false
+showToolbarFullscreen false
+showProjectPanel false

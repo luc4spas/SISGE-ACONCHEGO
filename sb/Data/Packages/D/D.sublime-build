@@ -1,0 +1,2 @@
+build dmd.exe "$File"
+lineNumberRegex exec ^(.*?)\(([0-9]+)\)

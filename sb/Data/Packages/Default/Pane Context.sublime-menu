@@ -1,0 +1,6 @@
+<menu>
+	<item caption="Open" command="open"/>
+	<item caption="New" command="new"/>
+	<separator/>
+	<item caption="&amp;%I %s" command="openRecent %i" repeat="9"/>
+</menu>

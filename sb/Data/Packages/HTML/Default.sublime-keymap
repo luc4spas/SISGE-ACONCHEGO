@@ -1,0 +1,62 @@
+<bindings>
+	<!-- HTML Snippets -->
+	<binding key="h,t,m,l,tab" command="insertSnippet 'Packages/HTML/html.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="b,o,d,y,tab" command="insertSnippet 'Packages/HTML/body.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="h,e,a,d,tab" command="insertSnippet 'Packages/HTML/head.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="c,d,a,t,a,tab" command="insertSnippet 'Packages/XML/cdata.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="a,tab" command="insertSnippet 'Packages/HTML/a.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="i,m,g,tab" command="insertSnippet 'Packages/HTML/img.sublime-snippet'">
+		<context name="selector" value="text.html - meta.tag - source, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	
+
+	<!-- General HTML tags -->
+	<binding key="/(?i:abbr|acronym|address|applet|area|b|base|big|blockquote|caption|center|cite|col|colgroup|cote|dd|del|dfn|div|dl|dt|em|fieldset|font|form|frame|frameset|h1|h2|h3|h4|h5|h6|i|ins|kbd|label|legend|li|link|map|noframes|object|ol|optgroup|p|pre|samp|select|small|span|strong|sub|sup|table|tbody|td|textarea|tfoot|th|thead|title|tr|tt|u|ul|var)/,tab" command="insertSnippet 'Packages/XML/tag.sublime-snippet' $1">
+		<context name="selector" value="text.html - source - meta.tag, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+
+	<!-- Self closing HTML tags -->
+	<binding key="/(?i:br|button|embed|hr|input|meta|option|param)/,tab" command="insertSnippet 'Packages/HTML/unclosed tag.sublime-snippet' $1">
+		<context name="selector" value="text.html - source - meta.tag, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+
+	<!-- Auto insert paired angle brackets -->
+	<binding key="&gt;" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value="&gt;"/>
+		<context name="selector" value="text.html - source"/>
+	</binding>
+	<binding key="&lt;" command="insertSnippet 'Packages/Default/Angle Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(\t| |$)"/>
+		<context name="selector" value="text.html - source - meta.tag"/>
+	</binding>
+	<binding key="&lt;" command="insertSnippet 'Packages/Default/Angle Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+		<context name="selector" value="text.html - source - meta.tag"/>
+	</binding>
+
+	<!--
+	Dynamic Tags (with #id or .class)
+	(element#idname; element.classname)
+	-->
+	<binding key="/([\w-]+)/,#,/([\w-]+)/,tab" command="insertSnippet 'Packages/HTML/elementid.sublime-snippet' $1 $2">
+		<context name="selector" value="text.html - source - meta.tag, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+	<binding key="/([\w-]+)/,.,/([\w-]+)/,tab" command="insertSnippet 'Packages/HTML/elementclass.sublime-snippet' $1 $2">
+		<context name="selector" value="text.html - source - meta.tag, punctuation.definition.tag.begin, meta.scope.between-tag-pair.html"/>
+	</binding>
+</bindings>

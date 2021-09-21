@@ -1,0 +1,133 @@
+# While you can edit this file, it's generally best to put your changes in
+# User File Type.sublime options, which overrides the settings in here.
+# Settings may also be placed in file type specific options files, for example,
+# in Packages/Python/Python.sublime-options for python files.
+
+# Sets the colors used within the text area
+colorscheme Packages/Color Scheme - Default/Monokai Bright.tmTheme
+
+# The menu that pops up when you right click
+contextMenu Packages/Default/Context.sublime-menu
+
+# Font to draw with. To override the system antialiasing settings, append
+# :noantialias to the end of the line.
+font Courier New 10
+
+# What characters are considered to separate words when using ctrl+arrows etc
+wordSeparators ./\\()"'-:,.;<>~!@#$%^&*|+=[]{}`~?
+
+# Set to false to prevent line numbers being drawn in the gutter
+lineNumbers true
+
+# Set to false to hide the gutter altogether
+gutter true
+
+# Columns in which to display vertical rulers, space separated
+rulers
+
+# Set to true to turn spell checking on by default
+spellCheck false
+
+# The number of spaces a tab is considered equal to
+tabSize 4
+
+# Set to true to insert spaces when tab is pressed
+translateTabsToSpaces false
+
+# If translateTabsToSpaces is true, useTabStops will make tab and backspace to
+# insert/delete up to the next tabstop
+useTabStops true
+
+# Set to false to disable automatic indentation
+autoIndent true
+
+# Set to false to not trim whitespace added by autoIndent
+trimAutomaticWhitespace true
+
+# Set to false for horizontal scrolling
+wordWrap true
+
+# Set to a value other than 0 to force wrapping at that column rather than the
+# window width
+wrapWidth 0
+
+# Set to false to prevent word wrapped lines from being indented to the same
+# level
+indentSubsequentLines true
+
+# Set to true to draw text centered in the window rather than left aligned
+drawCentered false
+
+# Set to false to stop auto pairing quotes, brackets etc
+autoMatchEnabled true
+
+# Word list to use for spell checking
+dictionary Packages/Language - English/en_US.dic
+
+# Set to true to never prompt to reload when a file is changed on disk
+ignoreChanged false
+
+# Set to true to always reload changed files on disk, instead of prompting
+autoReloadChanged false
+
+# Set to false to disable highlighting any line with a cursor
+highlightLine true
+
+# Set to false to disable underlining the brackets surrounding the cursor
+matchBrackets true
+
+# Set to false if you'd rather only highlight the brackets when the cursor is
+# next to one
+matchBracketsContent true
+
+# Set to false to not highlight square brackets. This only takes effect if
+# matchBrackets is true
+matchBracketsSquare true
+
+# Set to false to not highlight curly brackets. This only takes effect if
+# matchBrackets is true
+matchBracketsBraces true
+
+# Set to false to not highlight angle brackets. This only takes effect if
+# matchBrackets is true
+matchBracketsAngle false
+
+# Set to false to disable detection of tabs vs. spaces on load
+detectIndentation true
+
+# Additional spacing at the top of each line, in pixels
+linePaddingTop 0
+
+# Additional spacing at the bottom of each line, in pixels
+linePaddingBottom 0
+
+# What should happen when the minimap is clicked outside of the view rectangle.
+# Valid values are 'none', 'position' or 'text'.
+clickToScroll text
+
+# Set to false to hide the vertical and horizontal scroll bars
+wantVerticalScrollBar true
+wantHorizontalScrollBar true
+
+# Set to false to disable scrolling past the end of the buffer
+scrollPastEnd true
+
+# Set to 'none' to turn off drawing whitespace, 'selection' to draw only the
+# whitespace within the selection, and 'all' to draw all whitespace
+drawWhiteSpace selection
+
+# Set to true to removing trailing whitespace on save
+trimTrailingWhiteSpaceOnSave false
+
+# The encoding to use when the encoding can't be determined automatically.
+# ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
+fallbackEncoding Western (Windows 1252)
+
+# Determines what character(s) are used to terminate each line in new files.
+# Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
+# 'unix' (LF only).
+defaultLineEnding system
+
+# Set to true to copy the selection to the clipboard whenever text is selected
+# with the mouse
+copyOnMouseSelect false

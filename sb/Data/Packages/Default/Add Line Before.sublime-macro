@@ -1,0 +1,3 @@
+moveTo hardbol
+insertAndDecodeCharacters "\n"
+move lines -1

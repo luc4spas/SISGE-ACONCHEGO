@@ -1,0 +1,8 @@
+rulers
+contextMenu Packages/Default/Widget Context.sublime-menu
+gutter false
+syntax Packages/Text/Plain text.tmLanguage
+drawWhiteSpace none
+isWidget true
+wordWrap false
+autoMatchEnabled false

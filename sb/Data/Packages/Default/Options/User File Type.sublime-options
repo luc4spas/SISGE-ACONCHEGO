@@ -1,0 +1,4 @@
+# Settings in here override those this Default File Type.sublime-options, and
+# are overridden in turn by file type specific options.
+# This is a good place to put your own settings and not have them overwritten
+# when upgrading.

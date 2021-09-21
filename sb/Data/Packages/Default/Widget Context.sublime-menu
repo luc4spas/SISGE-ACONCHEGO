@@ -1,0 +1,25 @@
+<menu>
+	<item caption="%s" command="spellingSuggestion 0"/>
+	<item caption="%s" command="spellingSuggestion 1"/>
+	<item caption="%s" command="spellingSuggestion 2"/>
+	<item caption="%s" command="spellingSuggestion 3"/>
+	<item caption="%s" command="spellingSuggestion 4"/>
+	<item caption="%s" command="spellingSuggestion 5"/>
+	<item caption="%s" command="spellingSuggestion 6"/>
+	<item caption="%s" command="spellingSuggestion 7"/>
+	<item caption="%s" command="spellingSuggestion 8"/>
+	<item caption="%s" command="spellingSuggestion 9"/>
+	<item caption="%s" command="spellingSuggestion 10"/>
+	<item caption="%s" command="spellingSuggestion 11"/>
+	<item caption="%s" command="spellingSuggestion 12"/>
+	<item caption="%s" command="spellingSuggestion 13"/>
+	<item caption="%s" command="spellingSuggestion 14"/>
+	<item caption="%s" command="spellingSuggestion 15"/>
+	<separator command="spellingSuggestion 0"/>
+	<item caption="Undo" command="undo"/>
+	<item caption="Redo" command="redo"/>
+	<separator/>
+	<item caption="Cut" command="cut"/>
+	<item caption="Copy" command="copy"/>
+	<item caption="Paste" command="paste"/>		
+</menu>

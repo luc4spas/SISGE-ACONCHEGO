@@ -1,0 +1,2 @@
+build python.exe "$File"
+lineNumberRegex ^[ ]*File "(...*?)", line ([0-9]*)

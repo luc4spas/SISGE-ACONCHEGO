@@ -1,0 +1,3 @@
+<menu>
+	<item caption="rot13" command="rot13"/>
+</menu>

@@ -1,0 +1,2 @@
+build javac.exe "$File"
+lineNumberRegex ^(...*?):([0-9]*):?([0-9]*)

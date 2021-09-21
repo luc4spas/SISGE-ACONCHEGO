@@ -1,0 +1,2 @@
+# Makefiles must always be indented with tabs
+translateTabsToSpaces false

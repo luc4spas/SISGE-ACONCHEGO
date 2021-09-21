@@ -1,0 +1,95 @@
+font.face Segoe UI 10; Arial 10
+font.backgroundColor #404040
+font.color white
+control.font.face Tahoma 9
+control.font.color black
+control.monospaceFont.face Courier New 10
+control.monospaceFont.color black
+control.backgroundColor #bbbbbb
+control.lightColor #292929
+control.shadowColor #292929
+control.highlight.font.face Tahoma 9
+control.highlight.font.color white
+control.highlightColor #3399ff
+control.highlight.monospaceFont.face Courier New 10
+control.highlight.monospaceFont.color white
+
+
+# Increase these values if you're using high DPI settings
+size.tabHeaderHeight 28
+size.statusbarHeight 20
+size.toolbarHeight 32
+
+# Other size related values
+size.tabGlobalBorder 0
+size.tabMiniButtonSize 24
+size.tabMiniButtonSpacing 4
+size.tabAdditionalSpacing 20
+size.checkboxWidth 13
+size.checkboxHeight 13
+size.scrollbarCrossExtent 16
+
+
+# Combo box down arrow
+btn.dropdown SimpleBlendedTextureShader "Packages/Theme - Default/down_arrow.png" "Packages/Theme - Default/down_arrow_over.png"
+
+# Buttons
+button BlendedTextureShader "Packages/Theme - Default/btn_up_norm_w6_h6.png" "Packages/Theme - Default/btn_up_over_w6_h6.png"
+button.down TextureShader "Packages/Theme - Default/btn_down_over_w6_h6.png"
+button.disabled BlendedTextureShader "Packages/Theme - Default/btn_up_norm_w6_h6.png" "Packages/Theme - Default/btn_up_norm_w6_h6.png"
+button.down.disabled TextureShader "Packages/Theme - Default/btn_up_norm_w6_h6.png"
+
+checkbox.on BlendedTextureShader "Packages/Theme - Default/checkbox_on.png" "Packages/Theme - Default/checkbox_on.png"
+checkbox.off SimpleTextureShader "Packages/Theme - Default/checkbox_off.png"
+
+# Icon buttons
+btn.left BlendedTextureShader "Packages/Theme - Default/lbtn_up_norm_w6_h6.png" "Packages/Theme - Default/lbtn_up_over_w6_h6.png"
+btn.down.left BlendedTextureShader "Packages/Theme - Default/lbtn_down_norm_w6_h6.png" "Packages/Theme - Default/lbtn_down_over_w6_h6.png"
+btn.down.over.left TextureShader "Packages/Theme - Default/lbtn_down_over_w6_h6.png"
+btn.middle BlendedTextureShader "Packages/Theme - Default/mbtn_up_norm_w6_h6.png" "Packages/Theme - Default/mbtn_up_over_w6_h6.png"
+btn.down.middle BlendedTextureShader "Packages/Theme - Default/mbtn_down_norm_w6_h6.png" "Packages/Theme - Default/mbtn_down_over_w6_h6.png"
+btn.down.over.middle TextureShader "Packages/Theme - Default/mbtn_down_over_w6_h6.png"
+btn.right BlendedTextureShader "Packages/Theme - Default/rbtn_up_norm_w6_h6.png" "Packages/Theme - Default/rbtn_up_over_w6_h6.png"
+btn.down.right BlendedTextureShader "Packages/Theme - Default/rbtn_down_norm_w6_h6.png" "Packages/Theme - Default/rbtn_down_over_w6_h6.png"
+btn.down.over.right TextureShader "Packages/Theme - Default/rbtn_down_over_w6_h6.png"
+
+scrollbar.hpuck TextureShader "Packages/Theme - Default/scrollbar_hpuck_w10_h0.png"
+scrollbar.htrack TextureShader "Packages/Theme - Default/scrollbar_htrack_w6_h0.png"
+scrollbar.puck TextureShader "Packages/Theme - Default/scrollbar_puck_w0_h10.png"
+scrollbar.track TextureShader "Packages/Theme - Default/scrollbar_track_w0_h6.png"
+
+# Panels
+panel TextureShader "Packages/Theme - Default/flat_panel_w4_h4.png"
+panel.raised TextureShader "Packages/Theme - Default/raised_panel_w4_h4.png"
+panel.hint TextureShader "Packages/Theme - Default/hint_panel_w4_h4.png"
+
+panel.toolbar ColorShader #3f3f3f
+
+panel.statusbar TextureShader "Packages/Theme - Default/flat_panel_w4_h4.png"
+button.statusbutton BlendedTextureShader "Packages/Theme - Default/flat_panel_btn_w4_h4.png" "Packages/Theme - Default/flat_panel_over_w4_h4.png"
+button.statusbutton.down TextureShader "Packages/Theme - Default/flat_panel_over_w4_h4.png"
+
+tab.selected TextureShader "Packages/Theme - Default/selected_w8_h12.png"
+tab.selected.unfocused TextureShader "Packages/Theme - Default/selected_unfocused_w8_h12.png"
+tab.unselected BlendedTextureShader "" "Packages/Theme - Default/unselected_over_w8_h12.png"
+panel.tab TextureShader "Packages/Theme - Default/tab_panel_w4_h12.png"
+panel.tabbody ColorShader #404040
+
+# Icons
+icon.bookmark SimpleTextureShader "Packages/Theme - Default/bookmark.png"
+icon.multibookmark SimpleTextureShader "Packages/Theme - Default/multi_bookmark.png"
+icon.collapse SimpleTextureShader "Packages/Theme - Default/mini_minus.png"
+icon.cross SimpleTextureShader "Packages/Theme - Default/cross.png"
+icon.downarrow SimpleTextureShader "Packages/Theme - Default/down_arrow.png"
+icon.expand SimpleTextureShader "Packages/Theme - Default/mini_plus.png"
+icon.find.case SimpleTextureShader "Packages/Theme - Default/find_case.png"
+icon.find.inselection SimpleTextureShader "Packages/Theme - Default/find_inselection.png"
+icon.find.preservecase SimpleTextureShader "Packages/Theme - Default/replace_preserve_case.png"
+icon.find.regex SimpleTextureShader "Packages/Theme - Default/find_regex.png"
+icon.find.reverse SimpleTextureShader "Packages/Theme - Default/find_reverse.png"
+icon.find.wholeword SimpleTextureShader "Packages/Theme - Default/find_wholeword.png"
+icon.find.wrap SimpleTextureShader "Packages/Theme - Default/find_wrap.png"
+icon.find.highlight SimpleTextureShader "Packages/Theme - Default/find_highlight.png"
+icon.minicross SimpleTextureShader "Packages/Theme - Default/minicross.png"
+icon.sort.dup SimpleTextureShader "Packages/Theme - Default/sort_dup.png"
+icon.tabcross SimpleBlendedTextureShader "Packages/Theme - Default/tabcross.png" "Packages/Theme - Default/minicross.png"

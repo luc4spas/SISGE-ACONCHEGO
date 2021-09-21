@@ -1,0 +1,42 @@
+<session version="2">
+    <history>
+        <![CDATA[recentFiles "C:\\sisge\\sisge\\.env"
+recentProjects 
+findHistory 
+findLocationHistory 
+findIncludeHistory "*.*"
+replaceHistory 
+consoleHistory ]]>
+</history>
+    <window>
+        <position>0,0,1,-1,-1,-1,-1,673,414,154,1070</position>
+        <layoutType>0</layoutType>
+        <activeGroup>0</activeGroup>
+        <project></project>
+        <group>
+            <activeView>0</activeView>
+            <view>
+                <bufferId>0</bufferId>
+                <options>
+                    <![CDATA[options.syntax Packages/Text/Plain Text.tmLanguage
+translation.x 0.000000
+translation.y 0.000000
+zoomLevel 1.000000
+bufferSize 607
+selection[0].a 156
+selection[0].b 156]]>
+</options>
+            </view>
+        </group>
+        <buffer>
+            <id>0</id>
+            <fileName>C:\sisge\sisge\.env</fileName>
+            <options>
+                <![CDATA[bufferSize 607
+readOnly false
+scratch false
+lineEnding Unix]]>
+</options>
+        </buffer>
+    </window>
+</session>

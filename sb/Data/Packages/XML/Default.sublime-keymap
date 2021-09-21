@@ -1,0 +1,19 @@
+<bindings>
+	<binding key=">" command="move characters 1">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingCharacter" value=">"/>
+		<context name="selector" value="text.xml"/>
+	</binding>
+	<binding key="<" command="insertSnippet 'Packages/Default/Angle Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsEmpty" value="true"/>
+		<context name="allFollowingText" value="^(\t| |$)"/>
+		<context name="selector" value="text.xml"/>
+	</binding>
+	<binding key="<" command="insertSnippet 'Packages/Default/Angle Brackets.sublime-snippet'">
+		<context name="option" value="autoMatchEnabled"/>
+		<context name="allSelectionsNonEmpty" value="true"/>
+		<context name="selector" value="text.xml"/>
+	</binding>
+</bindings>

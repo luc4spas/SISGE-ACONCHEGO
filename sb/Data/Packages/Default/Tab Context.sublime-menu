@@ -1,0 +1,12 @@
+<menu>
+	<item caption="Close Tab" command="closeUnder"/>
+	<item caption="Close Other Tabs" command="closeAllExceptUnder"/>
+	<item caption="Close Tabs to the Right" command="closeToRightOfUnder"/>
+	<item caption="Close All" command="closeAll"/>
+	<separator/>
+	<item caption="Save" command="saveUnder"/>
+	<separator/>
+	<item caption="New view into %s" command="cloneUnder"/>
+	<separator/>
+	<item caption="Buffer Name..." command="editBufferNameUnder"/>
+</menu>

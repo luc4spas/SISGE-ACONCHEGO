@@ -1,0 +1,11 @@
+<project>
+	<mount name="All Packages" dir="Packages/" direxclude=".svn"/>
+	<mount name="Category: Color Schemes" dir="Packages/" include="*.tmTheme"/>
+	<mount name="Category: File Types" dir="Packages/" include="*.tmLanguage,*.sublime-options" direxclude="Options"/>
+	<mount name="Category: Key Bindings" dir="Packages/" include="*.sublime-keymap"/>
+	<mount name="Category: Macros" dir="Packages/" include="*.sublime-macro"/>
+	<mount name="Category: Menus and Toolbar" dir="Packages/" include="*.sublime-menu, *.sublime-toolbar"/>
+	<mount name="Category: Plugins" dir="Packages/" include="*.py"/>
+	<mount name="Category: Snippets" dir="Packages/" include="*.sublime-snippet"/>
+	<mount name="Category: Themes" dir="Packages/" include="*.sublime-theme"/>
+</project>

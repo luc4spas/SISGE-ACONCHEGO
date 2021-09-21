@@ -1,0 +1,26 @@
+<toolbar>
+	<group>
+		<button caption="New" command="new" icon="Packages/Theme - Default/file_new.png"/>
+		<button caption="Open" command="open" icon="Packages/Theme - Default/file_open.png"/>
+		<button caption="Save" command="save" icon="Packages/Theme - Default/file_save.png"/>
+	</group>
+	<group>
+		<button caption="Cut" command="cut" icon="Packages/Theme - Default/edit_cut.png"/>
+		<button caption="Copy" command="copy" icon="Packages/Theme - Default/edit_copy.png"/>
+		<button caption="Paste" command="paste" icon="Packages/Theme - Default/edit_paste.png"/>
+	</group>
+	<group>
+		<button caption="Undo" command="undo" icon="Packages/Theme - Default/undo.png"/>
+		<button caption="Redo" command="redo" icon="Packages/Theme - Default/redo.png"/>
+	</group>
+	<group>
+		<button caption="Single Pane Layout" command="layoutSingle" icon="Packages/Theme - Default/layout_single.png"/>
+		<button caption="Vertical Double Pane Layout" command="layoutDoubleVert" icon="Packages/Theme - Default/layout_double_vert.png"/>
+		<button caption="Vertical Triple Pane Layout" command="layoutTripleVert" icon="Packages/Theme - Default/layout_triple_vert.png"/>
+		<button caption="Horizontal Single Pane Layout" command="layoutDoubleHoriz" icon="Packages/Theme - Default/layout_double_horiz.png"/>
+		<button caption="Quad Pane Layout" command="layoutQuad" icon="Packages/Theme - Default/layout_quad.png"/>
+	</group>
+	<group>
+		<button caption="Fullscreen" command="toggleFullScreen" icon="Packages/Theme - Default/fullscreen.png"/>
+	</group>
+</toolbar>

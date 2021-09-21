@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA['${1:${2:#thing}:${3:click}}': function(element){
+	$0
+}${10:,}]]></content>
+    <tabTrigger>'':f</tabTrigger>
+    <scope>source.js</scope>
+    <description>Object Method String</description>
+</snippet>

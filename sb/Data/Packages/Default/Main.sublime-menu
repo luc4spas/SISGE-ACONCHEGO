@@ -1,0 +1,318 @@
+<menu>
+	<menu caption="&amp;File">
+		<item caption="&amp;New" command="new"/>
+		<item caption="&amp;Open..." command="open"/>
+		<menu caption="Open wit&amp;h encoding">
+			<item caption="Open with UTF-&amp;8..." command="openWithEncoding utf-8"/>
+			<item caption="Open with UTF-16 &amp;LE..." command="openWithEncoding 'utf-16 le'"/>
+			<item caption="Open with UTF-16 &amp;BE..." command="openWithEncoding 'utf-16 be'"/>
+			<separator/>
+			<item caption="Open with Western (Windows 1252)..." command="openWithEncoding 'Western (Windows 1252)'"/>
+			<item caption="Open with Western (ISO 8859-1)..." command="openWithEncoding 'Western (ISO 8859-1)'"/>
+			<item caption="Open with Western (ISO 8859-3)..." command="openWithEncoding 'Western (ISO 8859-3)'"/>
+			<item caption="Open with Western (ISO 8859-15)..." command="openWithEncoding 'Western (ISO 8859-15)'"/>
+			<item caption="Open with Western (Mac Roman)..." command="openWithEncoding 'Western (Mac Roman)'"/>
+			<item caption="Open with DOS (CP 437)..." command="openWithEncoding 'DOS (CP 437)'"/>
+			<item caption="Open with Arabic (Windows 1256)..." command="openWithEncoding 'Arabic (Windows 1256)'"/>
+			<item caption="Open with Arabic (ISO 8859-6)..." command="openWithEncoding 'Arabic (ISO 8859-6)'"/>
+			<item caption="Open with Baltic (Windows 1257)..." command="openWithEncoding 'Baltic (Windows 1257)'"/>
+			<item caption="Open with Baltic (ISO 8859-4)..." command="openWithEncoding 'Baltic (ISO 8859-4)'"/>
+			<item caption="Open with Celtic (ISO 8859-14)..." command="openWithEncoding 'Celtic (ISO 8859-14)'"/>
+			<item caption="Open with Central European (Windows 1250)..." command="openWithEncoding 'Central European (Windows 1250)'"/>
+			<item caption="Open with Central European (ISO 8859-2)..." command="openWithEncoding 'Central European (ISO 8859-2)'"/>
+			<item caption="Open with Cyrillic (Windows 1251)..." command="openWithEncoding 'Cyrillic (Windows 1251)'"/>
+			<item caption="Open with Cyrillic (Windows 866)..." command="openWithEncoding 'Cyrillic (Windows 866)'"/>
+			<item caption="Open with Cyrillic (ISO 8859-5)..." command="openWithEncoding 'Cyrillic (ISO 8859-5)'"/>
+			<item caption="Open with Cyrillic (KOI8-R)..." command="openWithEncoding 'Cyrillic (KOI8-R)'"/>
+			<item caption="Open with Cyrillic (KOI8-U)..." command="openWithEncoding 'Cyrillic (KOI8-U)'"/>
+			<item caption="Open with Estonian (ISO 8859-13)..." command="openWithEncoding 'Estonian (ISO 8859-13)'"/>
+			<item caption="Open with Greek (Windows 1253)..." command="openWithEncoding 'Greek (Windows 1253)'"/>
+			<item caption="Open with Greek (ISO 8859-7)..." command="openWithEncoding 'Greek (ISO 8859-7)'"/>
+			<item caption="Open with Hebrew (Windows 1255)..." command="openWithEncoding 'Hebrew (Windows 1255)'"/>
+			<item caption="Open with Hebrew (ISO 8859-8)..." command="openWithEncoding 'Hebrew (ISO 8859-8)'"/>
+			<item caption="Open with Nordic (ISO 8859-10)..." command="openWithEncoding 'Nordic (ISO 8859-10)'"/>
+			<item caption="Open with Romanian (ISO 8859-16)..." command="openWithEncoding 'Romanian (ISO 8859-16)'"/>
+			<item caption="Open with Turkish (Windows 1254)..." command="openWithEncoding 'Turkish (Windows 1254)'"/>
+			<item caption="Open with Turkish (ISO 8859-9)..." command="openWithEncoding 'Turkish (ISO 8859-9)'"/>
+			<item caption="Open with Vietnamese (Windows 1258)..." command="openWithEncoding 'Vietnamese (Windows 1258)'"/>
+		</menu>
+		<menu caption="Open more">
+			<item caption="Open &amp;in current tab..." command="openInCurrentTab"/>
+			<item caption="Open from current directory..." command="promptOpenFileInCurrentDirectory"/>
+			<item caption="Open from project" command="openFileInProject"/>
+			<item caption="Swi&amp;tch to %s" command="switchFile cpp hpp h c cxx hxx"/>
+		</menu>
+		<item caption="New &amp;view into %s" command="clone"/>
+		<separator/>
+		<item caption="New &amp;Window" command="newWindow"/>
+		<separator/>
+		<item caption="&amp;Close" command="close"/>
+		<item caption="Clos&amp;e All" command="closeAll"/>
+		<item caption="&amp;Revert" command="revert"/>
+		<separator/>
+		<item caption="&amp;Save" command="save"/>
+		<item caption="Save &amp;As..." command="saveAs"/>
+		<menu caption="Save wi&amp;th encoding">
+			<item caption="Save with UTF-&amp;8..." command="saveAs utf-8"/>
+			<item caption="Save with UTF-16 &amp;LE..." command="saveAs 'utf-16 le with bom'"/>
+			<item caption="Save with UTF-16 &amp;BE..." command="saveAs 'utf-16 be with bom'"/>
+			<separator/>
+			<item caption="Save with Western (Windows 1252)..." command="saveAs 'Western (Windows 1252)'"/>
+			<item caption="Save with Western (ISO 8859-1)..." command="saveAs 'Western (ISO 8859-1)'"/>
+			<item caption="Save with Western (ISO 8859-3)..." command="saveAs 'Western (ISO 8859-3)'"/>
+			<item caption="Save with Western (ISO 8859-15)..." command="saveAs 'Western (ISO 8859-15)'"/>
+			<item caption="Save with Western (Mac Roman)..." command="saveAs 'Western (Mac Roman)'"/>
+			<item caption="Save with DOS (CP 437)..." command="saveAs 'DOS (CP 437)'"/>
+			<item caption="Save with Arabic (Windows 1256)..." command="saveAs 'Arabic (Windows 1256)'"/>
+			<item caption="Save with Arabic (ISO 8859-6)..." command="saveAs 'Arabic (ISO 8859-6)'"/>
+			<item caption="Save with Baltic (Windows 1257)..." command="saveAs 'Baltic (Windows 1257)'"/>
+			<item caption="Save with Baltic (ISO 8859-4)..." command="saveAs 'Baltic (ISO 8859-4)'"/>
+			<item caption="Save with Celtic (ISO 8859-14)..." command="saveAs 'Celtic (ISO 8859-14)'"/>
+			<item caption="Save with Central European (Windows 1250)..." command="saveAs 'Central European (Windows 1250)'"/>
+			<item caption="Save with Central European (ISO 8859-2)..." command="saveAs 'Central European (ISO 8859-2)'"/>
+			<item caption="Save with Cyrillic (Windows 1251)..." command="saveAs 'Cyrillic (Windows 1251)'"/>
+			<item caption="Save with Cyrillic (Windows 866)..." command="saveAs 'Cyrillic (Windows 866)'"/>
+			<item caption="Save with Cyrillic (ISO 8859-5)..." command="saveAs 'Cyrillic (ISO 8859-5)'"/>
+			<item caption="Save with Cyrillic (KOI8-R)..." command="saveAs 'Cyrillic (KOI8-R)'"/>
+			<item caption="Save with Cyrillic (KOI8-U)..." command="saveAs 'Cyrillic (KOI8-U)'"/>
+			<item caption="Save with Estonian (ISO 8859-13)..." command="saveAs 'Estonian (ISO 8859-13)'"/>
+			<item caption="Save with Greek (Windows 1253)..." command="saveAs 'Greek (Windows 1253)'"/>
+			<item caption="Save with Greek (ISO 8859-7)..." command="saveAs 'Greek (ISO 8859-7)'"/>
+			<item caption="Save with Hebrew (Windows 1255)..." command="saveAs 'Hebrew (Windows 1255)'"/>
+			<item caption="Save with Hebrew (ISO 8859-8)..." command="saveAs 'Hebrew (ISO 8859-8)'"/>
+			<item caption="Save with Nordic (ISO 8859-10)..." command="saveAs 'Nordic (ISO 8859-10)'"/>
+			<item caption="Save with Romanian (ISO 8859-16)..." command="saveAs 'Romanian (ISO 8859-16)'"/>
+			<item caption="Save with Turkish (Windows 1254)..." command="saveAs 'Turkish (Windows 1254)'"/>
+			<item caption="Save with Turkish (ISO 8859-9)..." command="saveAs 'Turkish (ISO 8859-9)'"/>
+			<item caption="Save with Vietnamese (Windows 1258)..." command="saveAs 'Vietnamese (Windows 1258)'"/>
+		</menu>
+		<item caption="Save A&amp;ll" command="saveAll"/>
+		<separator/>
+		<item caption="&amp;%I %s" command="openRecent %i" repeat="9"/>
+		<separator/>
+		<item caption="E&amp;xit" command="exit"/>
+		<item caption="Exit and preserve session" command="hotExit"/>
+	</menu>
+
+	<menu caption="&amp;Edit">
+		<item caption="&amp;Undo" command="undo"/>
+		<item caption="%s" command="redoOrRepeat"/>
+		<separator/>
+		<item caption="Cu&amp;t" command="cut"/>
+		<item caption="&amp;Copy" command="copy"/>
+		<item caption="&amp;Paste" command="paste"/>
+		<item caption="Paste and Indent" command="pasteAndIndent"/>
+		<separator/>
+		<item caption="Goto &amp;Line" command="showPanel goto"/>
+		<item caption="Goto &amp;Symbol" command="gotoSymbol"/>
+		<separator/>
+		<item caption="Auto Complete" command="autoComplete"/>
+		<item caption="&amp;Join Lines" command="join"/>
+		<item caption="Move Line Up" command="swapLine up"/>
+		<item caption="Move Line Down" command="swapLine down"/>
+		<item caption="In&amp;dent" command="indent"/>
+		<item caption="U&amp;nindent" command="unindent"/>
+		<menu caption="&amp;Wrap">
+			<item caption="Wrap Paragraph at &amp;Ruler" command="wrapLines"/>
+			<item caption="Wrap Paragraph at &amp;70 Characters" command="wrapLines 70"/>
+			<item caption="Wrap Paragraph at &amp;80 Characters" command="wrapLines 80"/>
+			<item caption="Wrap Paragraph at &amp;100 Characters" command="wrapLines 100"/>
+			<item caption="Wrap Paragraph at &amp;120 Characters" command="wrapLines 120"/>
+		</menu>
+		<separator/>
+		<menu caption="Change C&amp;ase">
+			<item caption="&amp;Upper Case" command="upperCase"/>
+			<item caption="&amp;Lower Case" command="lowerCase"/>
+			<item caption="&amp;Title Case" command="titleCase"/>
+			<item caption="&amp;Swap Case" command="swapCase"/>
+		</menu>
+		<item caption="Sort..." command="showPanel sort nofocus"/>
+		<menu caption="Permute Lines">
+			<item caption="&amp;Reverse Lines" command="permuteLines reverse"/>
+			<item caption="&amp;Shuffle Lines" command="permuteLines shuffle"/>
+			<item caption="&amp;Unique Lines" command="permuteLines unique"/>
+		</menu>
+		<menu caption="Permute Selections">
+			<item caption="&amp;Reverse Selections" command="permuteSelection reverse"/>
+			<item caption="&amp;Shuffle Selections" command="permuteSelection shuffle"/>
+			<item caption="&amp;Unique Selections" command="permuteSelection unique"/>
+		</menu>
+		<separator/>
+		<menu caption="Co&amp;mment">
+			<item caption="Toggle &amp;Comment" command="toggleComment"/>
+			<item caption="Toggle Comment (block)" command="toggleComment block"/>
+		</menu>
+	</menu>
+
+	<menu caption="&amp;Selection">
+		<item caption="Select &amp;All" command="selectAll"/>
+		<item caption="In&amp;vert Selection" command="invertSelection"/>
+		<item caption="Expand Selection to &amp;Line" command="expandSelectionTo line"/>
+		<item caption="Expand Selection to &amp;Word" command="expandSelectionTo word"/>
+		<item caption="Expand Selection to &amp;Paragraph" command="expandSelectionToParagraph"/>
+		<item caption="Expand Selection to Brackets" command="expandSelectionTo brackets"/>
+		<item caption="Expand Selection to Scope" command="expandSelectionTo scope"/>
+		<item caption="Split Selection into L&amp;ines" command="splitSelectionIntoLines"/>
+		<item caption="Split Selection at &amp;Ends" command="splitSelection"/>
+		<item caption="&amp;Single Selection" command="singleSelection"/>
+		<item caption="Jump to Matching Bracket" command="moveTo brackets"/>
+		<separator/>
+		<menu caption="&amp;Bookmarks">
+			<item caption="&amp;Toggle Bookmark" command="toggleBookmark"/>
+			<item caption="&amp;Next Bookmark" command="nextBookmark"/>
+			<item caption="&amp;Prev Bookmark" command="prevBookmark"/>
+			<item caption="&amp;Clear Bookmarks" command="clearBookmarks"/>
+			<item caption="&amp;All Bookmarks" command="allBookmarks"/>
+			<separator/>
+			<item caption="%s" command="gotoBookmark %i" repeat="16"/>
+		</menu>
+	</menu>
+
+	<menu caption="Fin&amp;d">
+		<item caption="&amp;Find" command="showPanel find"/>
+		<item caption="Find &amp;Next" command="findNext"/>
+		<item caption="Find Pr&amp;evious" command="findPrev"/>
+		<item caption="&amp;Incremental Find" command="incrementalFind"/>
+		<item caption="Reverse Incremental Find" command="reverseIncrementalFind"/>
+		<separator/>
+		<item caption="&amp;Replace" command="showPanel replace"/>
+		<separator/>
+		<item caption="Find in File&amp;s" command="showPanel findInFiles"/>
+		<item caption="Find in Open &amp;Buffers" command="findInOpenBuffers"/>
+		<item caption="Sho&amp;w Find Results" command="showPanel findResults"/>
+		<item caption="Show Next Find Result" command="nextResult"/>
+		<item caption="Show Previous Find Result" command="prevResult"/>
+	</menu>
+
+	<menu caption="&amp;View">
+		<item caption="&amp;Tabs" command="toggleApp showTabs"/>
+		<item caption="Toolbar" command="toggleApp showToolbar"/>
+		<item caption="Status&amp;bar" command="toggleApp showStatusbar"/>
+		<item caption="&amp;Minimap" command="toggleApp showMinimap"/>
+		<!-- <item caption="Project Panel" command="toggleApp showProjectPanel"/> -->
+		<item caption="Outp&amp;ut Panel" command="showPanel output nofocus"/>
+		<item caption="Console" command="showPanel console"/>
+		<separator/>
+		<item caption="&amp;Full Screen" command="toggleFullScreen"/>
+		<item caption="Full Screen (Distraction Free)" command="distractionFree"/>
+		<menu caption="Full Screen S&amp;ettings">
+			<item caption="&amp;Tabs" command="toggleApp showTabsFullscreen"/>
+			<item caption="Status&amp;bar" command="toggleApp showStatusbarFullscreen"/>
+			<item caption="Minimap" command="toggleApp showMinimapFullscreen"/>
+			<item caption="&amp;Menu" command="toggleApp showMenuFullscreen"/>
+		</menu>
+		<separator/>
+		<menu caption="&amp;Layout">
+			<item caption="&amp;Single Pane" command="layoutSingle"/>
+			<item caption="&amp;Vertical Double Pane" command="layoutDoubleVert"/>
+			<item caption="Vertical Triple Pane" command="layoutTripleVert"/>
+			<item caption="Vertical Quad Pane" command="layoutQuadVert"/>
+			<item caption="&amp;Horizontal Double Pane" command="layoutDoubleHoriz"/>
+			<item caption="&amp;Quad Pane" command="layoutQuad"/>
+		</menu>
+		<menu caption="Mo&amp;ve View to Pane">
+			<item caption="Pane &amp;1" command="moveToGroup 0"/>
+			<item caption="Pane &amp;2" command="moveToGroup 1"/>
+			<item caption="Pane &amp;3" command="moveToGroup 2"/>
+			<item caption="Pane &amp;4" command="moveToGroup 3"/>
+		</menu>
+		<menu caption="&amp;Select Pane">
+			<item caption="Pane &amp;1" command="focusGroup 0"/>
+			<item caption="Pane &amp;2" command="focusGroup 1"/>
+			<item caption="Pane &amp;3" command="focusGroup 2"/>
+			<item caption="Pane &amp;4" command="focusGroup 3"/>
+		</menu>
+		<item caption="Select File..." command="promptSelectFile"/>
+		<separator/>
+		<item caption="&amp;Word Wrap" command="toggle wordWrap"/>
+		<menu caption="Indentation">
+			<item caption="Indent using spaces" command="toggle translateTabsToSpaces"/>
+			<separator/>
+			<item caption="Tab Width: 1" command="set tabSize 1"/>
+			<item caption="Tab Width: 2" command="set tabSize 2"/>
+			<item caption="Tab Width: 3" command="set tabSize 3"/>
+			<item caption="Tab Width: 4" command="set tabSize 4"/>
+			<item caption="Tab Width: 5" command="set tabSize 5"/>
+			<item caption="Tab Width: 6" command="set tabSize 6"/>
+			<item caption="Tab Width: 7" command="set tabSize 7"/>
+			<item caption="Tab Width: 8" command="set tabSize 8"/>
+			<separator/>
+			<item caption="Guess settings from buffer" command="detectIndentation"/>
+		</menu>
+		<separator/>
+		<item caption="Spell Chec&amp;k" command="toggle spellCheck"/>
+		<item caption="&amp;Next misspelled word" command="nextMisspelledWord"/>
+		<item caption="&amp;Previous misspelled word" command="prevMisspelledWord"/>
+		<dynamicmenu caption="Dictionary..." key="setDictionary"/>
+		<separator/>
+		<dynamicmenu caption="Apply S&amp;yntax Highlighting" key="setFileType"/>
+	</menu>
+
+	<menu caption="&amp;Tools">
+		<dynamicmenu caption="Packages" key="packages"/>
+		<separator/>
+		<dynamicmenu caption="&amp;Snippets" key="snippets"/>
+		<item caption="Ne&amp;w Snippet" command="newSnippet"/>
+		<separator/>
+		<item caption="New Plugin" command="newPlugin"/>
+		<separator/>
+		<dynamicmenu caption="Build System" key="setBuild"/>
+		<item caption="%s" command="build"/>
+		<item caption="Build o&amp;n Save" command="toggleApp buildOnSave"/>
+		<item caption="Save &amp;All on Build" command="toggleApp saveOnBuild"/>
+		<separator/>
+		<item caption="Show &amp;Output Panel" command="showPanel output nofocus"/>
+		<item caption="Show Next Build Error" command="nextResult"/>
+		<item caption="Show Previous Build Error" command="prevResult"/>
+		<item caption="&amp;Terminate" command="terminate"/>
+		<item caption="New Build System" command="newBuildSystem"/>
+		<separator/>
+		<item caption="%s" command="toggleRecord"/>
+		<item caption="Playback &amp;Macro" command="runMacro"/>
+		<item caption="Sa&amp;ve Macro..." command="saveMacro"/>
+		<dynamicmenu caption="Mac&amp;ros" key="runMacro"/>
+	</menu>
+
+	<menu caption="&amp;Project">
+		<item caption="New Project..." command="newProject"/>
+		<item caption="Open Project..." command="openProject"/>
+		<item caption="Open Directory..." command="openDirAsProject"/>
+		<menu caption="Recent Projects">
+			<item caption="&amp;%I %s" command="openRecentProject %i" repeat="8"/>
+		</menu>
+		<item caption="Close Project" command="closeProject"/>
+		<separator/>
+		<item caption="Edit Project" command="editProject"/>
+		<item caption="Refresh Project" command="scanProject"/>
+		<separator/>
+		<item caption="Open File in Project" command="openFileInProject"/>
+		<item caption="Find in Project" command="findInProject"/>
+	</menu>
+
+	<menu caption="P&amp;references">
+		<item caption="Browse Packages..." command="browseDir Packages/"/>
+		<separator/>
+		<item caption="Default File Preferences" command="open 'Packages/Default/Options/Default File Type.sublime-options'"/>
+		<item caption="User File Preferences" command="open 'Packages/Default/Options/User File Type.sublime-options'"/>
+		<dynamicmenu caption="Per-type File Preferences" key="openSyntaxOptions"/>
+		<separator/>
+		<item caption="Default Key Bindings" command="open Packages/Default/Default.sublime-keymap"/>
+		<item caption="User Key Bindings" command="open Packages/User/Default.sublime-keymap"/>
+		<dynamicmenu caption="Per-type Key Bindings" key="openKeyMap"/>
+		<separator/>
+		<item caption="General Preferences" command="open Packages/Default/Options/Application.sublime-options"/>
+		<separator/>
+		<dynamicmenu caption="Apply &amp;Theme" key="setTheme"/>
+		<dynamicmenu caption="Apply Color &amp;Scheme" key="setColorscheme"/>
+	</menu>
+
+	<menu caption="&amp;Help">
+		<item caption="Documentation" command="browseUrl http://www.sublimetext.com/documentation"/>
+		<item caption="Forum" command="browseUrl http://www.sublimetext.com/forum/"/>
+		<separator/>
+		<item caption="Purchase &amp;License" command="browseUrl http://www.sublimetext.com/buy"/>
+		<item caption="&amp;Enter License" command="license"/>
+		<separator/>
+		<item caption="About" command="browseUrl http://www.sublimetext.com/about"/>
+	</menu>
+</menu>

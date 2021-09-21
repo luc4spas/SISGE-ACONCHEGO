@@ -1,0 +1,6 @@
+rulers
+contextMenu Packages/Default/Widget Context.sublime-menu
+gutter false
+isWidget true
+wordWrap false
+autoMatchEnabled false

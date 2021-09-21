@@ -1,0 +1,5 @@
+<menu>
+	<item caption="Windows" command="setLineEnding windows"/>
+	<item caption="Unix" command="setLineEnding unix"/>
+	<item caption="Mac OS 9" command="setLineEnding mac"/>
+</menu>
