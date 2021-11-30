@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Validator;
 use App\Aluno;
+use Carbon\Carbon;
 use App\Turma;
 use Illuminate\Http\Request;
 use File;
@@ -35,7 +37,7 @@ class AlunoController extends Controller
     public function create()
     {
   
-        $turmas = \App\Turma::all();
+        $turmas = Turma::all();
         return view('aluno.register', compact('turmas'));
     }
 
@@ -45,17 +47,7 @@ class AlunoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $validator = \Validator::make($request->all(), [
-            'nome' => 'required',
-            'sexo' => 'required',
-        ]);
-        
-        if ($validator->fails())
-        {
-            return response()->json(['errors'=>$validator->errors()->all()]);
-        }
+    public function store(Request $request){
 
         $alunos= new \App\Aluno;
 
@@ -108,12 +100,7 @@ class AlunoController extends Controller
         return redirect('aluno')->with('sucess', 'Aluno cadastrada com sucesso');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Aluno  $aluno
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Aluno $aluno)
     {
         
@@ -252,6 +239,22 @@ class AlunoController extends Controller
     {
         $alunos = Aluno::findOrFail($id);
         return view('aluno.registro', compact('alunos', 'id'));
+    }
+    public function boleto(Request $request)
+    {
+        $id = $request->get('id');
+        $meses = array( 'JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO', 'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO');        
+        $aluno = Aluno::findOrFail($id);
+        $ven = $request->get('venc');
+        $val = $request->get('valor');
+        //dd($val);
+        $turma = $aluno->turmas;
+        return view('aluno.boleto', compact('aluno', 'meses','turma', 'ven','val'));
+    }
+
+    public function showBoleto($id){
+        $aluno = Aluno::findOrFail($id);
+        return view ('aluno.modalBOleto', compact('aluno'));
     }
 
     public function alunoTurno(Request $request)

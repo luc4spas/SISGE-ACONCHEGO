@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,7 +19,9 @@ Route::post('profile', 'UserController@update_avatar');
 
 //Rotas de Alunos
 Route::get('/aluno', 'AlunoController@show')->name('aluno');
-Route::get('/aluno/creat', 'AlunoController@create')->name('aluno.creat');
+Route::get('/aluno/{id}', 'AlunoController@showBoleto')->name('aluno.boletoShow');
+Route::post('/aluno/boleto/{id}', 'AlunoController@boleto')->name('aluno.boleto');
+Route::get('/create/aluno', 'AlunoController@create')->name('aluno.create');
 Route::get('/aluno/edit/{id}', 'AlunoController@edit')->name('aluno.edit');
 Route::post('/aluno/edit/{id}', 'AlunoController@update')->name('aluno.update');
 Route::post('/aluno/creat', 'AlunoController@store')->name('aluno.store');

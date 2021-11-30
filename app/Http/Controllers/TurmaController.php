@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Turma;
+use Carbon\Carbon;
 use App\Colaboradores;
 use App\Aluno;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class TurmaController extends Controller
     }
     public function index()
     {
-        $turmas = DB::table('turmas')->where('ano', '=', '2020')
+        $date = Carbon::now()->format('Y');
+        $turmas = DB::table('turmas')->where('ano', '=', $date)
         ->join('colaboradores', 'turmas.colaborador_id', '=', 'colaboradores.id')
         ->select('turmas.*', 'colaboradores.nomCol')->orderBy('ano', 'DESC')->paginate(20);
         
@@ -66,6 +68,8 @@ class TurmaController extends Controller
         $turma->sala=$request->get('sala');
         $turma->turno=$request->get('turno');
         $turma->qtdVaga=$request->get('qtdVaga');
+        $turma->valor=$request->get('money');
+        $turma->valorP=$request->get('valorP');
         $turma->auxiliar=implode(',', $request->get('auxiliar'));
 
         $turma->save();
@@ -162,7 +166,15 @@ class TurmaController extends Controller
         $turma->sala=$request->get('sala');
         $turma->turno=$request->get('turno');
         $turma->qtdVaga=$request->get('qtdVaga');
+        $turma->valor=$request->get('money');
+        $turma->valorP=$request->get('valorP');
+        $auxiliar= $request->get('auxiliar');
+        if (empty($auxiliar)) {
+            $turma->auxiliar=$request->get('auxiliar');
+        }else{
         $turma->auxiliar=implode(',', $request->get('auxiliar'));
+        }   
+
 
         
 

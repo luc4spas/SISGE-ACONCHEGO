@@ -1,0 +1,90 @@
+body {
+    padding: 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .receipt-main {
+    font-family:Calibri;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 12px;
+    border: 1px solid #000;
+  }
+ 
+  
+  .receipt-title {
+    text-align: left;
+    color: #00008B !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+  }
+    
+  .receipt-label {
+    font-weight: 600;
+  }
+  
+  .text-large {
+    font-size: 16px;
+  }
+  
+  .receipt-section {
+    margin-top: 10px;
+  }
+  
+  .receipt-footer {
+    text-align: center;
+    background: #ff0000;
+  }
+  
+  .receipt-signature {
+    height: 80px;
+    margin: 50px 0;
+    padding: 0 50px;
+    background: #fff;
+  }
+    .receipt-line {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #000;
+    }
+    
+    p {
+      text-align: center;
+      margin: 0;
+    }
+    #left{
+        /*Novamente definimos a largura da div*/
+        width:50%;
+        /* altura da div */
+        height:310px;
+        /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+        literalmente flutue e se posicione onde queremos na página,
+        quando escolhemos left, dizemos que esse bloco irá se posicionar na
+        parte esquerda da página */
+        float:left;
+        /* Cor de fundo da div */
+       
+        }
+        #right{
+            /*Novamente definimos a largura da div*/
+            width:50%;
+            /* altura da div */
+            height:310px;
+            /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco
+            em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo
+            em cascata, nossa div conteúdo definimos a largura de 1000px e na
+            conteudo-left 500px, automaticamente ao definirmos o conteudo-right
+            com 500px e à esquerda também, ele ficou à direita do conteudo-left,
+            pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+            float:left;
+            /* Cor de fundo da div */
+      
+            padding-left: 15px;
+            border-left: 1px solid;
+            }

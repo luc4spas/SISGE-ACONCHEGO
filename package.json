@@ -19,6 +19,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "inputmask": "^4.0.1-beta.39"
+        "inputmask": "^4.0.1-beta.39",
+        "jquery-maskmoney": "^3.0.2"
     }
 }

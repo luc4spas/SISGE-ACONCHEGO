@@ -64,7 +64,7 @@
               <td>{{ $turma->nomCol }}</td>
               <td>{{ $turma->sala }}</td>
               
-              <td style="width 10px;width: 157px;">
+              <td style="width: 10px;width: 157px;">
                     <a href="{{action('TurmaController@edit', $turma->id)}}" type="button" class="btn btn-warning"><i class="fa fa-edit"></i></a>
                     <a href="{{action('TurmaController@destroy', $turma->id)}}" type="button" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                 <div style="display: inline;" class="dropdown">                        

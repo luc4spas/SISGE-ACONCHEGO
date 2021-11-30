@@ -8,7 +8,6 @@
 
 @section('content')
 
-
 <div class="box box-info">
     <div class="box-header with-border">
       <h3 class="box-title"></h3>
@@ -79,7 +78,15 @@
       <div class="form-group">
         <label class="col-sm-2 control-label">Quantidade de Vagas</label>
           <div class="col-sm-2">
-            <input type="number" class="form-control" name="qtdVaga">
+            <input type="number" class="form-control" name="qtdVaga" required>
+          </div>
+          <label class="col-sm-2 control-label">Valor Mensalidade</label>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" name="money" id="money" required>
+          </div>
+          <label class="col-sm-2 control-label">Valor Mensalidade Parcial</label>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" name="valorP" id="valorP" required>
           </div>
       </div>
       <!-- /.box-body -->
@@ -89,14 +96,18 @@
       </div>
       <!-- /.box-footer -->
     </form>
+    <script src="/js/jquery.js"></script> 
+    <script type="text/javascript" src="/js/jquery.mask.js"></script>
+    <script src="/select2/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function() {
+              $('.js-example-basic-multiple').select2();
+          });
+    </script> 
+    <script type="text/javascript">$("#money").mask("#.##0,00", {reverse: true});</script>
+    <script type="text/javascript">$("#valorP").mask("#.##0,00", {reverse: true});</script>
+
   </div>
 
   
-  <script src="/js/jquery.js"></script>
-  <script src="/select2/dist/js/select2.min.js"></script>
-  <script type="text/javascript">
-        $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
-        });
-</script>
 @stop

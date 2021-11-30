@@ -89,7 +89,7 @@
               <select class="form-control" class="col-sm-2" name="turma">
                   <option></option>
                 @foreach ($turmas as $item)                  
-                  <option>{{ $item->nomTurma }} - {{ $item->turno }}</option>
+                  <option value="{{ $item->id }}">{{ $item->nomTurma }} - {{ $item->turno }}</option>
                 @endforeach
             </select>
             </div>

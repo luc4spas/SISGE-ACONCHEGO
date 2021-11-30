@@ -75,7 +75,8 @@
                     <label class="col-sm-1 control-label">Auxiliar Atualizar:</label>
                   <div class="col-sm-4">
                     <select class="js-example-basic-multiple form-control" name="auxiliar[]" multiple="multiple">
-                            @foreach ($colabs as $colab)                           
+                    <option selected  value="{{ $turmas->auxiliar }}">{{ $turmas->auxiliar }}</option> 
+                            @foreach ($colabs as $colab)                          
                             <option value="{{ $colab->nomCol }}">{{ $colab->nomCol }}</option>
                             @endforeach
 
@@ -88,6 +89,14 @@
           <div class="col-sm-2">
             <input value="{{ $turmas->qtdVaga }}" type="number" class="form-control" name="qtdVaga">
           </div>
+          <label class="col-sm-2 control-label">Valor Mensalidade</label>
+          <div class="col-sm-2">
+            <input value="{{ $turmas->valor }}" type="text" class="form-control" name="money" id="money">
+          </div>
+          <label class="col-sm-2 control-label">Valor Mensalidade Parcial</label>
+          <div class="col-sm-2">
+            <input value="{{ $turmas->valorP }}" type="text" class="form-control" name="valorP" id="valorP">
+          </div>
       </div>
       <!-- /.box-body -->
       <div class="box-footer">
@@ -99,11 +108,15 @@
     </form>
   </div>
 
-  <script src="/js/jquery.js"></script>
-  <script src="/select2/dist/js/select2.min.js"></script>
-  <script type="text/javascript">
-        $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
-        });
-</script>
+  <script src="/js/jquery.js"></script> 
+    <script type="text/javascript" src="/js/jquery.mask.js"></script>
+    <script src="/select2/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function() {
+              $('.js-example-basic-multiple').select2();
+          });
+    </script> 
+    <script type="text/javascript">$("#money").mask("0.000,00", {reverse: true});</script>
+    <script type="text/javascript">$("#valorP").mask("0.000,00", {reverse: true});</script>
+
 @stop
